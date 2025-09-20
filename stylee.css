@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full Background Container */
+.container {
+  position: fixed; /* Stay fixed behind everything */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1; /* Push it behind other content */
+  background:rgb(23, 1, 45); /* Dark background color */
+}
+
+/* Bubbles Wrapper */
+.bubbles {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* Each Bubble */
+.bubbles span {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: rgb(25, 1, 67);
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 
+   
+    0 0 100px rgb(25, 1, 67),
+    0 0 100px  rgb(25, 1, 67);
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+}
+
+/* Even Bubbles Styling */
+.bubbles span:nth-child(even) {
+  background: rgb(48, 4, 92);
+  box-shadow: 
+  
+    0 0 100px  rgb(25, 1, 67),
+    0 0 100px   rgb(25, 1, 67);
+}
+
+/* Bubble Animation */
+@keyframes animate {
+  0% { transform: translateY(100vh) scale(0); }
+  100% { transform: translateY(-100vh) scale(1); }
+}

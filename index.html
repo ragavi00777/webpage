@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bubbles Background</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Bubbles Background -->
+  <div class="container">
+    <div class="bubbles">
+      <span style="--i:11;"></span>
+      <span style="--i:1;"></span>
+      <span style="--i:2;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:14;"></span>
+      <span style="--i:23;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:16;"></span>
+      <span style="--i:19;"></span>
+      <span style="--i:20;"></span>
+      <span style="--i:22;"></span>
+      <span style="--i:25;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:1;"></span>
+      <span style="--i:22;"></span>
+      <span style="--i:7;"></span>
+      <span style="--i:14;"></span>
+      <span style="--i:23;"></span>
+      <span style="--i:15;"></span>
+      <span style="--i:12;"></span>
+      <span style="--i:19;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:2;"></span>
+      <span style="--i:25;"></span>
+      <span style="--i:11;"></span>
+      <span style="--i:1;"></span>
+      <span style="--i:2;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:14;"></span>
+      <span style="--i:23;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:16;"></span>
+      <span style="--i:19;"></span>
+      <span style="--i:20;"></span>
+      <span style="--i:22;"></span>
+      <span style="--i:25;"></span>
+    </div>
+  </div>
+
+ <div class="navigation">
+      <nav>Elect-era-25</nav>
+      <ul>
+        <li><a href="indexx.html">Events</a></li>
+        <li>Members</li>
+        <li>Timeline</li>
+        <li>Contact</li>
+        <button>SignIn</button>
+         </ul>
+    </div>
+    <div class="center">
+      <center>
+      <h1>COIMBATORE INSTITUTE OF TECHNOLOGY</h1>
+      <h2>ELECTRICAL AND ELECTRONICS ENGINEERING</h2>
+      <p>Register soon! Last date for registration is 07/09/2005</p>
+      <p><a href="indexx.html">click here</a></p>
+      <p>to register</p>
+      
+       </center></div>
+       <h4>ABOUT CIT</h4>
+   <div class="cit">
+    <div id="one"><img src="logo.png"></div>
+    <div id="two"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis molestias rem necessitatibus sunt nesciunt asperiores voluptatibus illum minima nulla. Officia soluta, dolorum recusandae sequi placeat voluptatem aut numquam ea repellendus dignissimos velit nihil quisquam explicabo fugiat ipsa perferendis dicta incidunt ad, possimus, esse repellat corrupti similique quaerat reprehenderit. Voluptatem, inventore!</p>
+     <h3>"POWERFUL PEOPLE COME FROM POWERFUL PLACE"</h3></div>
+    </div>
+ <h4>COUNTDOWN TIME</h4>
+ <div class="timer-container">
+    
+    <div class="timer">
+      <div class="time-box">
+        <span id="days">00</span>
+        <p>Days</p>
+      </div>
+      <div class="time-box">
+        <span id="hours">00</span>
+        <p>Hours</p>
+      </div>
+      <div class="time-box">
+        <span id="minutes">00</span>
+        <p>Minutes</p>
+      </div>
+      <div class="time-box">
+        <span id="seconds">00</span>
+        <p>Seconds</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Set the target date (Change this date to whatever you want)
+    const targetDate = new Date("Sep 07, 2025 00:00:00").getTime();
+
+    function updateTimer() {
+      const now = new Date().getTime();
+      const timeLeft = targetDate - now;
+
+      if (timeLeft <= 0) {
+        document.querySelector(".timer").innerHTML = "<h2>🎉 Time's Up! 🎉</h2>";
+        return;
+      }
+
+      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+      document.getElementById("days").textContent = days < 10 ? "0" + days : days;
+      document.getElementById("hours").textContent = hours < 10 ? "0" + hours : hours;
+      document.getElementById("minutes").textContent = minutes < 10 ? "0" + minutes : minutes;
+      document.getElementById("seconds").textContent = seconds < 10 ? "0" + seconds : seconds;
+    }
+
+    setInterval(updateTimer, 1000);
+    updateTimer();
+  </script>
+
+  </div>
+ </div>
+ <h4>SPONSORSHIP</h4>
+<center> <div class="sponsors">
+  <div id="four"><img src="madam.png"></div>
+  <div id="five"><img src="sponser everest.png"></div>
+  <div id="six"><img src="sponser ls .png"></div>
+ </div></center>
+ <br>
+  <h4>SPONSORSHIP</h4>
+<center> <div class="special">
+<div id="up">
+  <h1>Dr.Vasantharathna</h1>
+  <h3>Head Of The Department</h3>
+</div>
+<p>SPECIAL THANKS</p>
+<div id="middle">
+  <h1>Dr.Suresh</h1>
+  <h3>Associate Professor</h3>
+</div>
+<div id="middle">
+  <h1>Dr.Rathna Priya</h1>
+  <h3>Associate Professor</h3>
+</div>
+<div id="middle">
+  <h1>Dr.Mynavathi</h1>
+  <h3>Associate Professor</h3>
+</div> 
+ </div> </center><br><br>
+</body>
+</html>
